@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+        <title>Document</title>
+</head>
+
+<body class="container">
+    <header>
+        <% include ../partials/header %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <div class="span3">
+                <h2>Sign In</h2>
+                <form method="POST" action="/prelogin">
+                    Username :
+                    <input type="text" name="username" id="username" class="span3">
+                    <br>
+                    <input type="submit" value="Sign in" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>
